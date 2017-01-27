@@ -12,8 +12,14 @@ class Test_winning_numbers <Minitest::Test
   end
 
   def test_if_6_passing_number_is_true
-  	assert_equal(true, winning_numbers(6,[5, 6, 7]))
+  	assert_equal(true, winning_numbers(6, [5, 6, 7]))
   end	
+  
+  def test_to_see_if_multiple_numbers_27_through_33_are_false_or_true
+  	assert_equal(false, true, false, winning_numbers(26, 29, 34 [27,33,34,30,28,29]))
+  end
+
+  
 
 end
 

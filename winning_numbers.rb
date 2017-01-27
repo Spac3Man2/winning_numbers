@@ -6,15 +6,19 @@
 
 #end 	THIS WORKS
 
-def winning_numbers(pick, numbers)
-    win = false   
-    numbers.each do |n|
-      if pick == n
-      
-     win = true
-     end 
+def winning_numbers(pick, *numbers)
 
-   end
+    pick = true   
+    
+    numbers.each do |n|
+      
+     win = true 
+     #elsif [27...33] == [27...33]
+
+     #else [27...33] == [26...34]
+    
+    #win = false
+    end
    print win
-   return win 
- end		
+   return win	
+  end 
